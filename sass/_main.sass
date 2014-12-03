@@ -230,6 +230,7 @@ header
     color: #597b99
     display: inline-block
     position: relative
+    text-transform: uppercase
     &:before
       position: absolute
       content: ""
@@ -264,8 +265,161 @@ header
     position: relative
     z-index: 0
 
+.advantages
+  border-top: 5px solid #ffffff
+  padding-top: 30px
+  padding-bottom: 50px
+  background: url(../img/advantages_bg.png)
+  +cover
+  position: relative
+  .row
+    &:first-of-type
+      position: relative
+      margin-top: 125px
+    &:nth-of-type(2)
+      margin-top: 0
+      position: relative
+      top: -170px
+  &__img
+    width: 284px
+    height: 284px
+  .item
+    font-family: 'robotocondensed'
+    font-size: 18px
+    color: #927961
+    display: inline-block
+    text-transform: uppercase
+    span
+      border-bottom: solid 2px
+    &.i1, &.i3, &.i5
+      text-align: right
+      border-bottom: solid 2px
+    i
+      position: relative
+      display: inline-block
+      left: -6px
+      top: 0
+    &.i1
+      padding-left: 10px
+      &:before
+        position: absolute
+        top: 59px
+        right: -138px
+        width: 160px
+        height: 0
+        border-bottom: solid 2px
+        +transform(rotate(24deg))
+        content: ''
+        z-index: 1
+      &:after
+        position: absolute
+        content: ''
+        z-index: 1
+        right: -137px
+        top: 88px
+        width: 10px
+        height: 10px
+        +border-radius(50%)
+        background: #937961
 
-
+      i
+        +s(a-img1)
+    &.i2
+      &:before
+        position: absolute
+        top: 61px
+        left: -133px
+        width: 180px
+        height: 0
+        border-bottom: solid 2px
+        +transform(rotate(-19deg))
+        content: ''
+        z-index: 1
+      &:after
+        position: absolute
+        content: ''
+        z-index: 1
+        left: -137px
+        top: 88px
+        width: 10px
+        height: 10px
+        +border-radius(50%)
+        background: #937961
+      i
+        +s(a-img3)
+    &.i3
+      &:before
+        position: absolute
+        top: 57px
+        right: -138px
+        width: 160px
+        height: 0
+        border-bottom: solid 2px
+        +transform(rotate(24deg))
+        content: ''
+        z-index: 1
+      &:after
+        position: absolute
+        content: ''
+        z-index: 1
+        right: -137px
+        top: 86px
+        width: 10px
+        height: 10px
+        +border-radius(50%)
+        background: #937961
+      i
+        +s(a-img2)
+    &.i4
+      &:before
+        position: absolute
+        top: 55px
+        left: -137px
+        width: 180px
+        height: 0
+        border-bottom: solid 2px
+        +transform(rotate(-19deg))
+        content: ''
+        z-index: 1
+      &:after
+        position: absolute
+        content: ''
+        z-index: 1
+        left: -137px
+        top: 81px
+        width: 10px
+        height: 10px
+        +border-radius(50%)
+        background: #937961
+      i
+        +s(a-img4)
+    &.i5
+      position: relative
+      left: 50%
+      +transform(translateX(-50%))
+      margin-top: 20px
+      &:before
+        position: absolute
+        top: -35px
+        left: 65px
+        width: 65px
+        height: 0
+        border-bottom: solid 2px
+        +transform(rotate(90deg))
+        content: ''
+        z-index: 1
+      &:after
+        position: absolute
+        content: ''
+        z-index: 1
+        left: 92px
+        top: -71px
+        width: 10px
+        height: 10px
+        +border-radius(50%)
+        background: #937961
+      i
+        +s(a-img5)
 
 
 
