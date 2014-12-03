@@ -87,10 +87,10 @@ body
   //overflow: hidden
 input, textarea
   +placeholder
-    font-size: 13px
+    font-size: 16px
     text-transform: none
-    color: #a3a3a3
-    font-family: 'proxima_nova_ltlight'
+    color: #000
+    font-family: 'robotolight_italic'
 %in
   max-width: 1200px
   width: 1000px
@@ -108,20 +108,21 @@ input, textarea
 
 .btn
   display: inline-block
-  font-size: 18px
+  font-size: 16px
   text-decoration: none
   text-transform: uppercase
   +transition(background, .5s)
   +background-clip(padding-box)
   color: #ffffff
-  +text-shadow(0 1px 0 rgba(0,0,0,.1))
-  +border-radius(3px)
-  background: #fd5b21
-  @include box-shadow(0 2px 0 #d04817)
-  +background-image(linear-gradient(bottom, #ff4a11 -25%, #ff7145 125%))
-  font-family: 'proxima_nova_rgbold'
+  +border-radius(10px)
+  background-color: #fd49a7
+  +box-shadow(0 2px 5px rgba(29,30,31,.26), inset 0 -3px 0 rgba(29,30,31,.17))
+  +background-image(linear-gradient(to bottom, #fb59c7 0%, #d1328f 100%))
+  font-family: 'robotobold_condensed'
+
+
   &:hover
-    background: lighten(#fd5b21, 10%)
+    background: lighten(#d1328f, 10%)
     +box-shadow(0 0 0 0)
     color: #fff
 .title
@@ -151,10 +152,13 @@ input, textarea
   margin-top: 0
   padding: 0
   .counter-title
-    color: #3e3e3e
-    font-size: 14px
+    color: inherit
+    font-size: 18px
     display: inline-block
-    padding: 0 10px
+    font-family: 'robotolight'
+    margin: 0
+    position: relative
+    top: 12px
   .bl
     float: left
     text-align: center
@@ -165,35 +169,32 @@ input, textarea
       margin-left: 0
     span
       display: inline-block
-      font-family: 'proxima_nova_rgregular'
-      font-size: 28px
-      color: white
+      font-family: 'robotobold_condensed'
+      font-size: 36px
+      color: #597b99
       padding-top: 2px
-      width: 55px
-      height: 39px
+      //width: 55px
+      //height: 39px
       position: relative
-      +border-radius(3px)
-      +background-clip(padding-box)
-      +box-shadow(0 2px 0 #000)
-      +background-image(linear-gradient(to bottom, #4d4d4d -25%, #272727 125%))
-
+      //+border-radius(3px)
+      //+background-clip(padding-box)
+      //+box-shadow(0 2px 0 #000)
+      background: none
       &:after
         position: absolute
-        font-family: 'proxima_nova_rgregular'
         content: ":"
         font-size: 33px
-        color: #4d4d4d
-        top: -4px
-        right: -15px
+        top: 3px
+        right: -16px
       &.s
         &:after
           content: ""
 
 
     p
-      font-family: 'proxima_nova_ltlight'
-      font-size: 13px
-      color: #a0a0a0
+      font-family: 'robotolight'
+      font-size: 12px
+      color: inherit
       margin-top: 6px
 
 
