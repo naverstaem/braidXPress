@@ -1762,8 +1762,9 @@ header .header__bottom, .header--bottom .header__bottom { font-size: 16px; font-
 .about__list li { position: relative; padding-left: 55px; margin-top: 15px; }
 .about__list li:before { position: absolute; content: ""; background: url('../img/icons-s61eba2119b.png') 0 -238px no-repeat; width: 30px; height: 29px; top: 0; left: 0; }
 .about__img { width: 551px; height: 403px; margin-left: -200px; position: relative; z-index: 0; }
+.about__img img { max-width: 100%; }
 
-.advantages { border-top: 5px solid #ffffff; padding-top: 30px; padding-bottom: 50px; background: url(../img/advantages_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
+.advantages { border-top: 5px solid #ffffff; padding-top: 30px; padding-bottom: 50px; background: url(../img/advantages_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; overflow: hidden; }
 .advantages .row:first-of-type { position: relative; margin-top: 125px; }
 .advantages .row:nth-of-type(2) { margin-top: 0; position: relative; top: -170px; }
 .advantages__img { width: 284px; height: 284px; }
@@ -1886,3 +1887,18 @@ footer .footer__bottom span { margin-left: 10px; }
 .thanks .modal-dialog { max-width: 650px; margin-top: 60px; }
 .thanks .modal-body { padding: 25px 0; }
 .thanks .modal-body h3 { font-size: 20px; color: #343837; font-family: "robotoregular"; }
+
+@media (max-width: 992px) { header .header__img, .header--bottom .header__img { top: 0; }
+  .about__img { margin-left: auto; }
+  .advantages .row:nth-of-type(2) { position: static; }
+  .advantages .col-md-3 { text-align: center; }
+  .advantages .item.i1, .advantages .item.i2, .advantages .item.i3, .advantages .item.i4, .advantages .item.i5 { float: none !important; margin: 10px 0; }
+  .advantages .item.i1:before, .advantages .item.i2:before, .advantages .item.i3:before, .advantages .item.i4:before, .advantages .item.i5:before { border-bottom: 0; }
+  .advantages .item.i1:after, .advantages .item.i2:after, .advantages .item.i3:after, .advantages .item.i4:after, .advantages .item.i5:after { background: none; }
+  .work__items { background: none; } }
+@media (max-width: 768px) { .about__img { max-width: 100%; } }
+@media (max-width: 480px) { .title { font-size: 36px !important; }
+  .how__img, .why__img, .intro__img { max-width: 100%; }
+  .header--bottom .header__img { max-width: 100%; }
+  .header--bottom .header__img img { max-width: 100%; }
+  .header--bottom .header__price .price--old--bottom { left: -30px; } }
