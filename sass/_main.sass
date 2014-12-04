@@ -465,6 +465,75 @@ header
     color: #597b99
 
 
+.why
+  padding-top: 20px
+  padding-bottom: 50px
+  .row
+    &:last-child
+      margin-top: 30px
+  h2
+    font-size: 36px
+    margin-bottom: 70px
+  &__list
+    font-family: 'robotolight'
+    font-size: 16px
+    color: #6f6f6f
+    list-style: none
+    li
+      position: relative
+      padding-left: 40px
+      margin-top: 15px
+      &:before
+        position: absolute
+        content: ''
+        +s(list-ico2)
+        top: 4px
+        left: 0
+  &__img
+    width: 300px
+    height: 300px
+    img
+      max-width: 100%
+  &__text
+    @extend .how__text
+    &:first-of-type
+      margin-top: 40px
+      position: relative
+      &:before
+        position: absolute
+        content: ''
+        width: 252px
+        height: 0
+        max-width: 100%
+        border-bottom: solid 1px #acacac
+        top: -30px
+        left: 50%
+        +transform(translateX(-50%))
+
+  &__list--bottom
+    padding-left: 0
+    li
+      padding-left: 30px
+      &:before
+        background: #597b99
+        width: 6px
+        height: 6px
+        top: 8px
+        +border-radius(50%)
+  &__list_title
+    padding-left: 30px
+    position: relative
+    font-family: 'robotobold_condensed'
+    font-size: 30px
+    color: #597b99
+    text-transform: uppercase
+    line-height: 1em
+
+
+
+
+
+
 .work
 
 
