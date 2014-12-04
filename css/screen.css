@@ -1832,7 +1832,14 @@ header .header__bottom, .header--bottom .header__bottom { font-size: 16px; font-
 .review__img { width: 98px; height: 98px; }
 .review__img img { max-width: 100%; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 
-.header--bottom { background: url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
+.header--bottom { padding-top: 55px; background: url(../img/header--bottom_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
+.header--bottom .header__text--bottom { font-family: "robotobold_condensed"; font-size: 30px; color: #ffffff; text-transform: uppercase; }
+.header--bottom .header__img { top: 15px; margin-bottom: -43px; margin-left: -35px; }
+.header--bottom .header__img img { max-width: none; }
+.header--bottom .header__price { text-align: right; margin-top: -50px; }
+.header--bottom .header__price .price--old--bottom { color: #ffffff; font-size: 36px; position: relative; left: 30px; }
+.header--bottom .header__price .price--new--bottom { background: url(../img/price--bottom_bg.png) no-repeat; width: 221px; height: 221px; line-height: 221px; }
+.header--bottom .header__form { margin-top: 0; }
 
 footer { background: #14644c; padding: 25px 0; font-size: 14px; position: relative; color: #d0dbef; font-family: "proxima_nova_rgregular"; text-align: center; }
 footer .footer__top a { display: inline-block; color: #f5e047; text-decoration: underline; }
