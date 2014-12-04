@@ -1824,6 +1824,14 @@ header .header__bottom, .header--bottom .header__bottom { font-size: 16px; font-
 .work__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; max-width: 100%; }
 .work p { font-family: "robotocondensed"; font-size: 18px; color: #927961; text-transform: uppercase; padding: 0 20px; line-height: 1em; }
 
+.review { padding: 40px 0 50px; }
+.review h2 { color: #f1660f; margin-bottom: 50px; }
+.review__item { margin-top: 20px; }
+.review__item h3 { font-family: "robotobold_condensed"; font-size: 24px; color: #597b99; text-transform: uppercase; }
+.review__item p { font-size: 16px; font-family: "robotolight"; color: #6f6f6f; }
+.review__img { width: 98px; height: 98px; }
+.review__img img { max-width: 100%; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
+
 .header--bottom { background: url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 
 footer { background: #14644c; padding: 25px 0; font-size: 14px; position: relative; color: #d0dbef; font-family: "proxima_nova_rgregular"; text-align: center; }
