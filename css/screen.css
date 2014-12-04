@@ -1817,6 +1817,13 @@ header .header__bottom, .header--bottom .header__bottom { font-size: 16px; font-
 .why__list--bottom li:before { background: #597b99; width: 6px; height: 6px; top: 8px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; }
 .why__list_title { padding-left: 30px; position: relative; font-family: "robotobold_condensed"; font-size: 30px; color: #597b99; text-transform: uppercase; line-height: 1em; }
 
+.work { padding: 30px 0 60px; background: url(../img/work_bg.png); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
+.work__items { background: url(../img/work-curve-img.png) no-repeat 95px 15px; margin-top: 30px; }
+.work__item { text-align: center; margin-top: 35px; }
+.work__img { width: 140px; height: 140px; margin-bottom: 15px; }
+.work__img img { -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; max-width: 100%; }
+.work p { font-family: "robotocondensed"; font-size: 18px; color: #927961; text-transform: uppercase; padding: 0 20px; line-height: 1em; }
+
 .header--bottom { background: url(../img/header_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; position: relative; }
 
 footer { background: #14644c; padding: 25px 0; font-size: 14px; position: relative; color: #d0dbef; font-family: "proxima_nova_rgregular"; text-align: center; }

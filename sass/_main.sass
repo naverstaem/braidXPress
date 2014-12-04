@@ -535,7 +535,29 @@ header
 
 
 .work
-
+  padding: 30px 0 60px
+  background: url(../img/work_bg.png)
+  +cover
+  &__items
+    background: url(../img/work-curve-img.png) no-repeat 95px 15px
+    margin-top: 30px
+  &__item
+    text-align: center
+    margin-top: 35px
+  &__img
+    width: 140px
+    height: 140px
+    margin-bottom: 15px
+    img
+      +border-radius(50%)
+      max-width: 100%
+  p
+    font-family: 'robotocondensed'
+    font-size: 18px
+    color: #927961
+    text-transform: uppercase
+    padding: 0 20px
+    line-height: 1em
 
 
 
